@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Sarala:wght@400;700&family=Tiro+Gurmukhi&display=swap');
+/* selecionei no google fonts 2 fontes que eu vou usar no site,
+dps vai em 'use on the web', cliquei no método @import,
+copiei tudo que tava dentro da tag <style> */
+
+/* before starting, I'm reseting CSS to remove all pre configurations
+in the browser. */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+
+body {
+    font-size: 100%;
+    background: linear-gradient(69deg,#2F2325 6.5%, #e08a43 86%)     
+    
+}
+
+
+.header{
+/* apply flexbox: */
+    display: flex;
+
+/* inside header, we have a parent tag(header), and two children tags
+(logo and menu navegation)*/
+
+/* setting direction of the content inside the header: */
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 40px;
+}
+
+.header-image{
+    height: 120px;
+}
+
+.header-menu{
+    display: flex;
+    gap: 45px;
+}
+
+.header-menu-item{
+    font-family: 'Sarala', sans-serif;
+    color: #FFF2E7;
+    font-weight: 400;
+    font-size: 21px;
+}
+
+
+
+.content{
+    border-top: 0.6px solid #FFF2E7;
+    padding: 50px;
+    margin-bottom: 50px;
+} 
+
+
+#main-content{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;    
+}
+
+.main-content-writing{
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.main-content-writing-title{
+    font-family: 'Tiro Gurmukhi', serif;
+    font-weight: 400;
+    font-size: 65px;
+    color: #FFF2E7;
+}
+
+.main-content-writing-subtitle{
+    font-family: 'Sarala', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    color: #ECD6C4;
+}
+
+.main-content-writing-button{
+    /* formato e estilo: */
+    background-color: #ECD6C4;
+    width: 190px;
+    height: 62px;
+    border: none;
+    box-shadow: 4px 6px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+
+    /* font: */
+    font-family: 'Sarala', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    color: #2F2325;
+} 
+
+.main-content-writing-button:hover{
+    background-color: rgba(236, 214, 196, 0.53);
+}
+
+.main-content-image{
+    height: 430px;
+}
+
+
+#secondary-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    margin-top: 50px;
+}
+
+.secondary-content-title{
+    border-top: 0.6px solid #FFF2E7;
+    padding-top: 48px;
+    margin-bottom: 16px;
+
+    font-family: 'Tiro Gurmukhi', serif;
+    font-weight: 400;
+    font-size: 28px;
+    color: #FFF2E7;    
+}
+
+.secondary-content-paragraph{
+    font-family: 'Sarala', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    color: #ECD6C4;
+}
+
+
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding: 32px;
+    border-top: 0.6px solid #FFF2E7;
+}
+
+.footer-main-image{
+    height: 100px;
+}
+
+.footer-links{   
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-around;
+    gap: 50px;   
+}
+
+.footer-links-writing{
+    font-family: 'Tiro Gurmukhi', serif;
+    font-weight: 400;
+    font-size: 19px;
+    color: #FFF2E7;    
+}
+
+.footer-social-links{
+    display:flex;
+    flex-direction: column;
+    align-items: center;    
+    gap: 4px;
+}
+
+.footer-social-links-images{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+.footer-social-image{
+    height: 25px;
+}
+
